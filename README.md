@@ -9,24 +9,21 @@ An existing file containing entries from different banks, e.g. bank name, BIC, b
 #### Create same structure like existing CSV 
 1. **Remove columns that are not needed:** Merkmal, PLZ, Ort, Kurzbezeichnung, PAN, Prüfziffer-berechnungs-methode, Datensatz-nummer, Änderungs-kennzeichen, Bankleitzahl-löschung, Nachfolge-Bankleitzahl
 2. **Create the following column order:** Id, Bank Name, BIC, URL, Adapter Id, Bank Code, IDP URL, Approach 
-  
-  `Id: Will be added by the ASPSP Registry Manager`
-  
-  `URL: Has to the filled up manually`
-  
-  `Adapter Id: Has to the filled up manually`
-  
-  `IDP URL, Approach: will propably remain empty`
-  
 3. **Sort the bank name in ascending order**
 4. **Add data of Bank Name, BIC and Bank Code to the corresponding columns**
 5. **Convert to CSV:** You can use [Convertio](https://convertio.co/de/)
 6. **Delete all quotes if present** TODO
 
 #### Add URL
+Has to the filled up manually
 
 #### Add Adapter Id
+Has to the filled up manually
 
+#### Remaining columns
+*Id:* Will be added by the ASPSP Registry Manager
+
+*IDP URL, Approach:* will propably remain empty
 
 ### 2. Update old CSV with new CSV 
 
