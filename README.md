@@ -17,7 +17,7 @@ In the following the Bundesbank file is the base file, which must be adapted to 
 4. **Delete all quotes if present:** use removeQuotes.ipynb
 
 ### 2. Check for redundant entries
-There are entries for the same bank that are redundant. That means, if the bank's bank code is the same and at the same time the BIC is empty except for one entry, all these entries except for one must be removed. 
+There are entries for the same bank that are redundant. That means, if the bank's bank code is the same and at the same time the BIC is empty except for one entry or alle BIC's are equal, all these entries except for one must be removed. 
 
 *An entry is not redundant for a bank if:*
 - Bank Code and BIC are different
