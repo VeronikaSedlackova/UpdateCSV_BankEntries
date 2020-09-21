@@ -15,7 +15,7 @@ In the following the Bundesbank file is the base file, which must be adapted to 
 2. **Create the following column order:** Id, Bank Name, BIC, URL, Adapter Id, Bank Code, IDP URL, Approach (Bank Name and Bank Code should be already filled up, BIC partly)
 3. **Sort the bank name in ascending order**
 4. **Convert to CSV:** You can use [Convertio](https://convertio.co/de/)
-5. **Delete all quotes if present:** use **removeQuotes.ipynb**
+5. **Delete all quotes if present:** use [**removeQuotes.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/removeQuotes.ipynb)
 6. Make sure that the initial column description: *Id, Bank Name, BIC, URL, Adapter Id, Bank Code, IDP URL, Approach* is deleted
 
 ### 2. Check for redundant entries
@@ -25,7 +25,7 @@ There are entries for the same bank that are redundant. That means, if the bank'
 - Bank Code and BIC are different
 - Bank Code ist the same but BIC is always different
 
-Use **removeRedundancy.ipynb** to remove redundant rows
+Use [**removeRedundancy.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/removeRedundancy.ipynb) to remove redundant rows
 
 ### 3. Add data for Adapter Id and productive URL
 
