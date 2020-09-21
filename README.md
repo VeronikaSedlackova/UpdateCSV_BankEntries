@@ -19,11 +19,16 @@ In the following the Bundesbank file is the base file, which must be adapted to 
 6. Make sure that the initial column description: *Id, Bank Name, BIC, URL, Adapter Id, Bank Code, IDP URL, Approach* is deleted
 
 ### 2. Check for redundant entries
-There are entries for the same bank that are redundant. That means, if the bank's bank code is the same and at the same time the BIC is empty except for one entry or alle BIC's are equal, all these entries except for one must be removed. 
+There are entries for the same bank that are redundant. 
+
+*Entries that have to be removed:*
+- Bank codes are equal and at the same time the BIC is empty except for one entry -> delete all entries without the BIC 
+- Bank codes are equal, BICs are equal
 
 *An entry is not redundant for a bank if:*
-- Bank Code and BIC are different
-- Bank Code ist the same but BIC is always different
+- Bank code and BIC are different
+- Bank code is the same but BIC is always different
+- Bank code is different to all bank codes (of the same bank) AND no BIC is present
 
 Use [**removeRedundancy.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/removeRedundancy.ipynb) to remove redundant rows
 
