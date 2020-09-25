@@ -13,7 +13,7 @@ In the following the Bundesbank file is the base file, which must be adapted to 
 #### Create same structure like existing CSV 
 1. **Remove columns that are not needed:** Merkmal, PLZ, Ort, Kurzbezeichnung, PAN, Prüfziffer-berechnungs-methode, Datensatz-nummer, Änderungs-kennzeichen, Bankleitzahl-löschung, Nachfolge-Bankleitzahl
 2. **Create the following column order:** Id, Bank Name, BIC, URL, Adapter Id, Bank Code, IDP URL, Approach (Bank Name and Bank Code should be already filled up, BIC partly)
-3. Sometimes there is an comma in the bank name. It has to be removed! You can do it in Excel:
+3. **Sometimes there is an comma in the bank name. It has to be removed! You can do it in Excel:**
 
    - Select the whole column "Bank name"
    - Go to "search and select" and then click on "replace"
@@ -27,7 +27,7 @@ In the following the Bundesbank file is the base file, which must be adapted to 
 4. **Sort the bank name in ascending order**
 5. **Convert to CSV:** You can use [Convertio](https://convertio.co/de/)
 6. **Delete all quotes if present:** use [**removeQuotes.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/removeQuotes.ipynb)
-7. Make sure that the initial column description: *Id, Bank Name, BIC, URL, Adapter Id, Bank Code, IDP URL, Approach* is deleted
+7. **Make sure that the initial column description: *Id, Bank Name, BIC, URL, Adapter Id, Bank Code, IDP URL, Approach* is deleted**
 
 ### 2. Check for redundant entries
 There are entries for the same bank that are redundant. 
