@@ -7,7 +7,7 @@ In the following the Bundesbank file is the base file, which must be adapted to 
 1. Preparing file from the Bundesbank
 2. Check for redundant entries
 3. Add data for Adapter Id and productive URL
-4. Check if there are missing entries from the old in the new CSV | ASK: wenn Eintrag in alt veraltet ist (zb wegen Fusion) und ich auf difference prüfe kommt die wieder in die neue Datei
+4. Check if there are missing entries from the old in the new CSV 
 
 ### 1. Preparing file from the Bundesbank
 #### Create same structure like existing CSV 
