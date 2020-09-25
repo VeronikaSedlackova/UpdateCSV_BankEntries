@@ -15,14 +15,14 @@ In the following the Bundesbank file is the base file, which must be adapted to 
 2. **Create the following column order:** Id, Bank Name, BIC, URL, Adapter Id, Bank Code, IDP URL, Approach (Bank Name and Bank Code should be already filled up, BIC partly)
 3. **Sometimes there is an comma in the bank name. It has to be removed! You can do it in Excel:**
 
-   - Select the whole column "Bank name"
+   - Select the whole column "Bank Name"
    - Go to "search and select" and then click on "replace"
-   - Enter an comma to "search for" and leave the replace input empty
+   - Enter a comma to "search for" and leave the "replace" input empty
    - Click on "replace all"
   
    Check if it worked:
    - Put a filter over the column description
-   - Look with the option "contains" if there is still a comma
+   - Look if there is still a comma in the option "contains"
 
 4. **Sort the bank name in ascending order**
 5. **Convert to CSV:** You can use [Convertio](https://convertio.co/de/)
@@ -60,6 +60,3 @@ Has to the filled up manually
 ## Final check
 - When converting the file from XLSX to CSV or in the different direction it can happens that Umlaute are converted into replacement characters
 - Entries may not be duplicated
-
-## Open questions
-alte Datei sortieren nach Bankname damit durchlaufzeit fuer jede Bank nicht so hoch? --> testen ob ohne Sortierung möglich (sonst fragen ob alte Datei sortiert werden darf)
