@@ -43,13 +43,14 @@ There are entries for the same bank that are redundant.
 
 Use [**removeRedundancy.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/removeRedundancy.ipynb) to remove redundant rows
 
-### 3. Add data for Adapter Id and productive URL
+### 3. Add data for AdapterId and productive URL
 
-#### Add Adapter Id
-Has to the filled up manually
+#### Add AdapterId and URL
+By using [**addURLandAdapterId.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/addURLandAdapterId.ipynb) data for the common banks will be added
 
-#### Add URL
-Has to the filled up manually
+*Check how many and which entries are still empty:*
+Use checkEntries.ipynb
+
 
 #### Remaining columns
 *Id:* Will be added by the ASPSP Registry Manager
@@ -59,4 +60,3 @@ Has to the filled up manually
 
 ## Final check
 - When converting the file from XLSX to CSV or in the different direction it can happens that Umlaute are converted into replacement characters
-- Entries may not be duplicated
