@@ -1,13 +1,17 @@
 # Update CSV file with bank entries
 An existing file containing entries from different banks, e.g. bank name, BIC, bank code, etc. is updated with [additional entries](https://www.bundesbank.de/resource/blob/602630/2c60c5bacbde19cf9ad0f4910371e982/mL/blz-aktuell-xls-data.xlsx).
 
+<br>
+
 ## Procedure 
 In the following the Bundesbank file is the base file, which must be adapted to the given structure:
 
 1. Preparing file from the Bundesbank
 2. Check for redundant entries
-3. Add data for Adapter Id and productive URL
+3. Add data to Adapter Id and productive URL
 4. Check if there are missing entries from the old in the new CSV 
+
+<br>
 
 ### 1. Preparing file from the Bundesbank
 #### Create same structure like existing CSV 
@@ -29,6 +33,8 @@ In the following the Bundesbank file is the base file, which must be adapted to 
 6. **Delete all quotes if present:** use [**removeQuotes.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/removeQuotes.ipynb)
 7. **Make sure that the initial column description: *Id, Bank Name, BIC, URL, Adapter Id, Bank Code, IDP URL, Approach* is deleted**
 
+<br>
+
 ### 2. Check for redundant entries
 There are entries for the same bank that are redundant. 
 
@@ -42,6 +48,8 @@ There are entries for the same bank that are redundant.
 - Bank code is different to all bank codes (of the same bank) AND no BIC is present
 
 Use [**removeRedundancy.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/removeRedundancy.ipynb) to remove redundant rows
+
+<br>
 
 ### 3. Add data for AdapterId and productive URL
 
@@ -57,6 +65,7 @@ Use checkEntries.ipynb
 
 *IDP URL, Approach:* will propably remain empty
 
+<br> 
 
 ## Final check
 - When converting the file from XLSX to CSV or in the different direction it can happens that Umlaute are converted into replacement characters
