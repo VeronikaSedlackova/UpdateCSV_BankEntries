@@ -3,13 +3,19 @@ An existing file containing entries from different banks, e.g. bank name, BIC, b
 
 <br>
 
+## Prerequisite
+
+- install Python
+- you can use jupyter notebook for executing the files (recommended):
+   - install jupyter with brew, conda or pip: `brew install jupyter`
+   - start jupyter notebook on Mac: `jupyter notebook`
+
 ## Procedure 
 In the following the Bundesbank file is the base file, which must be adapted to the given structure:
 
 1. Preparing file from the Bundesbank
 2. Check for redundant entries
 3. Add data to Adapter Id and productive URL
-4. Check if there are missing entries from the old in the new CSV 
 
 <br>
 
@@ -57,7 +63,7 @@ Use [**removeRedundancy.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV
 By using [**addURLandAdapterId.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/addURLandAdapterId.ipynb) data for the common banks will be added
 
 *Check how many and which entries are still empty:*
-Use checkEntries.ipynb
+After using [**addURLandAdapterId.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/addURLandAdapterId.ipynb) the information will be displayed in the last command output
 
 
 #### Remaining columns
