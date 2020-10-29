@@ -58,7 +58,7 @@ Use [**removeRedundancy.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV
 
 ### 3. Add data 
 
-#### Add AdapterId and productive URL and partly IDP URL
+#### Add AdapterId, productive URL and partly IDP URL
 By using [**addData.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/addData.ipynb) data for the common banks will be added
 
 - *Check how many and which entries are still empty:*
