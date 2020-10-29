@@ -1,7 +1,5 @@
 # Update CSV file with bank entries
-An existing file containing entries from different banks, e.g. bank name, BIC, bank code, etc. is updated with [additional entries](https://www.bundesbank.de/resource/blob/602630/2c60c5bacbde19cf9ad0f4910371e982/mL/blz-aktuell-xls-data.xlsx).
-
-[File](https://www.bundesbank.de/resource/blob/602630/2c60c5bacbde19cf9ad0f4910371e982/mL/blz-aktuell-xls-data.xlsx) from *Deutsche Bundesbank* contains specific bank information and has to be adapted to certain requirements.
+A [file](https://www.bundesbank.de/resource/blob/602630/2c60c5bacbde19cf9ad0f4910371e982/mL/blz-aktuell-xls-data.xlsx) from *Deutsche Bundesbank* contains specific bank information and has to be adapted to certain requirements.
 
 <br>
 
@@ -18,7 +16,6 @@ The Bundesbank file is the base file, which must be adapted in the following ord
 1. Preparing file from the Bundesbank
 2. Check for redundant entries
 3. Add data
-
 <br>
 
 ### 1. Preparing file from the Bundesbank
@@ -64,10 +61,10 @@ Use [**removeRedundancy.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV
 #### Add AdapterId and productive URL and partly IDP URL
 By using [**addURLandAdapterId.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/addURLandAdapterId.ipynb) data for the common banks will be added
 
-*Check how many and which entries are still empty:*
+- *Check how many and which entries are still empty:*
 After using [**addData.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/addURLandAdapterId.ipynb) the information will be displayed in the last command output
 
-*If too many entries are still empty you can use an extended file which adds data to selected banks:* [**addData_extended.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/addData_extended.ipynb)
+- *If too many entries are still empty you can use an extended file which adds data to selected banks:* [**addData_extended.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/addData_extended.ipynb)
 
 
 #### Remaining columns
