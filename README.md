@@ -21,7 +21,7 @@ The Bundesbank file is the base file, which must be adapted in the following ord
 ### 1. Preparing file from the Bundesbank
 #### Create same structure like existing CSV 
 1. **Remove columns that are not needed:** Merkmal, PLZ, Ort, Kurzbezeichnung, PAN, Prüfziffer-berechnungs-methode, Datensatz-nummer, Änderungs-kennzeichen, Bankleitzahl-löschung, Nachfolge-Bankleitzahl
-2. **Create the following column order:** Id, Bank Name, BIC, URL, Adapter Id, Bank Code, IDP URL, Approach (Bank Name and Bank Code should be already filled up, BIC partly)
+2. **Create the following column order:** Id, Bank Name, BIC, URL, Adapter Id, Bank Code (=Bank-leitzahl), IDP URL, Approach (Bank Name and Bank Code should be already filled up, BIC partly)
 3. **Sometimes there is an comma in the bank name. It has to be removed! You can do it in Excel:**
 
    - Select the whole column "Bank Name"
