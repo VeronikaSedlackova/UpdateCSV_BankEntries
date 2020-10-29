@@ -72,8 +72,8 @@ After using **addData.ipynb** the information will be displayed in the last comm
 
 *IDP URL, Approach:* will propably remain empty
 
-<br> 
 **The resulting file is called: addedData_final.csv**
+
 <br>
 
 ## Final check
