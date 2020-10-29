@@ -72,9 +72,9 @@ After using **addData.ipynb** the information will be displayed in the last comm
 
 *IDP URL, Approach:* will propably remain empty
 
-<h3>**The resulting file is called: addedData_final.csv**</h3>
-
 <br>
 
-## Final check
+## Final check/information
 - When converting the file from XLSX to CSV or in the different direction it can happens that umlaute are converted into replacement characters. You can use [this file](https://github.com/VeronikaSedlackova/Converter-for-wrong-formatted-Umlaute) to get back the right umlaute
+- <h4>The resulting file is called: addedData_final.csv</h4>
+
