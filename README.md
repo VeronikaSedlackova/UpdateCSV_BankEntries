@@ -1,6 +1,8 @@
 # Update CSV file with bank entries
 An existing file containing entries from different banks, e.g. bank name, BIC, bank code, etc. is updated with [additional entries](https://www.bundesbank.de/resource/blob/602630/2c60c5bacbde19cf9ad0f4910371e982/mL/blz-aktuell-xls-data.xlsx).
 
+[File](https://www.bundesbank.de/resource/blob/602630/2c60c5bacbde19cf9ad0f4910371e982/mL/blz-aktuell-xls-data.xlsx) from *Deutsche Bundesbank* contains specific bank information and has to be adapted to certain requirements.
+
 <br>
 
 ## Prerequisite
@@ -11,11 +13,11 @@ An existing file containing entries from different banks, e.g. bank name, BIC, b
    - start jupyter notebook on Mac: `jupyter notebook`
 
 ## Procedure 
-In the following the Bundesbank file is the base file, which must be adapted to the given structure:
+The Bundesbank file is the base file, which must be adapted in the following order:
 
 1. Preparing file from the Bundesbank
 2. Check for redundant entries
-3. Add data to Adapter Id and productive URL
+3. Add data
 
 <br>
 
@@ -57,13 +59,15 @@ Use [**removeRedundancy.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV
 
 <br>
 
-### 3. Add data to AdapterId and productive URL
+### 3. Add data 
 
-#### Add AdapterId and URL
+#### Add AdapterId and productive URL and partly IDP URL
 By using [**addURLandAdapterId.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/addURLandAdapterId.ipynb) data for the common banks will be added
 
 *Check how many and which entries are still empty:*
-After using [**addURLandAdapterId.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/addURLandAdapterId.ipynb) the information will be displayed in the last command output
+After using [**addData.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/addURLandAdapterId.ipynb) the information will be displayed in the last command output
+
+*If too many entries are still empty you can use an extended file which adds data to selected banks:* [**addData_extended.ipynb**](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/addData_extended.ipynb)
 
 
 #### Remaining columns
@@ -74,4 +78,4 @@ After using [**addURLandAdapterId.ipynb**](https://github.com/VeronikaSedlackova
 <br> 
 
 ## Final check
-- When converting the file from XLSX to CSV or in the different direction it can happens that Umlaute are converted into replacement characters
+- When converting the file from XLSX to CSV or in the different direction it can happens that umlaute are converted into replacement characters. You can use [this file](https://github.com/VeronikaSedlackova/Converter-for-wrong-formatted-Umlaute) to get back the right umlaute
