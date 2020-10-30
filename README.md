@@ -9,6 +9,8 @@ A [file](https://www.bundesbank.de/resource/blob/602630/2c60c5bacbde19cf9ad0f491
 - you can use jupyter notebook for executing the files (recommended):
    - install jupyter with brew, conda or pip: `brew install jupyter`
    - start jupyter notebook on Mac: `jupyter notebook`
+   
+- download [previous CSV file](https://github.com/VeronikaSedlackova/UpdateCSV_BankEntries/blob/master/config_xs2a-adapter-integ_aspsp-adapter-config.csv) 
 
 ## Procedure 
 The Bundesbank file is the base file, which must be adapted in the following order:
