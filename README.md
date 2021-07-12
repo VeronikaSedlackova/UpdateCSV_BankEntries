@@ -1,5 +1,5 @@
 # Update CSV file with bank entries
-A [file](https://www.bundesbank.de/resource/blob/602630/2c60c5bacbde19cf9ad0f4910371e982/mL/blz-aktuell-xls-data.xlsx) from *Deutsche Bundesbank* contains specific bank information and has to be adapted to certain requirements.
+A [file](https://www.bundesbank.de/dynamic/action/de/startseite/suche/747716/allgemeine-suche?query=unicredit) from *Deutsche Bundesbank* contains specific bank information and has to be adapted to certain requirements.
 
 <br>
 
